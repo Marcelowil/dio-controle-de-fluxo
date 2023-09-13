@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Contador {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
         try{
         System.out.print("Digite o primeiro parametro: ");
         int parametroUm = sc.nextInt();
@@ -27,6 +28,7 @@ public class Contador {
             throw new ParametrosInvalidosException();
         }
         int contagem = parametroDois - parametroUm;
+        
         for(int i = 1; i <= contagem; i++){
             System.out.println("Imprimindo o número " + i);
         }
